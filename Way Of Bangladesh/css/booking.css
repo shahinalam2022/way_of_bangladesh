@@ -1,0 +1,144 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+:root{
+  --bg-color: #fff;
+  --text-color: #221314;
+  --second-color: #5a7184;
+  --main-color: #6e54fa;
+  --big-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 18px 8%;
+  transition: ease .40s;
+  background-color: black;
+  
+}
+
+
+.logo-img{
+  width: 150px;
+}
+
+.navbar{
+  display: flex;
+
+}
+.navbar a{
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease .40s;
+  text-decoration: none;
+}
+.navbar a:hover{
+  background: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%) ;
+  border-radius: 4px;
+}
+#menu-icon{
+  color: var(--bg-color);
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+.registration{
+  padding: 8px 10px;
+  background-color: #2e86de;
+  
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+
+}
+.registration a{
+  color: white;
+  text-decoration: none;
+}
+.registration:active{
+  background-color: #6e54fa;
+}
+/* Navbar end */
+
+.home-banner{
+  background-image: url(../images/turag.jpg);
+  margin-top: 90px;
+  height: 250px;
+  background-position: 0% 32%;
+  position: relative;
+  isolation: isolate;
+}
+.home-banner::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(14, 13, 13);
+  inset: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.hello{
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-top: 10px;
+  color: rgb(253, 252, 252);
+}
+.hello-heading{
+  font-size: 45px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Hello traveler design end */
+
+
+.main-container{
+  margin-top: 25px;
+}
+.tour-container{
+  border: 1px solid black;
+  width: 330px;
+}
+.banner-image{
+  height: 270px;
+  width: 350px;
+  object-fit: cover;
+}
+.manual-mar{
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 5px 8px 10px rgba(0,0,0,0.5);
+  
+}
+
+.manual-card-group{
+  margin-bottom: 20px;
+  
+}
+.span-color{
+  color: blue;
+  font-weight: bold;
+}
